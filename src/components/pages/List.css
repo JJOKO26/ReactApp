@@ -1,0 +1,11 @@
+.list-container {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  grid-template-columns: 1fr;
+  min-height: 100vh; /* 画面全体の高さを使う */
+}
+
+.list-container h1 {
+  margin-bottom: 20px; /* タイトル下の余白 */
+  text-align: center;
+}
