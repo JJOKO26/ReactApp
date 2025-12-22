@@ -1,3 +1,4 @@
+// vite.config.js
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 import { VitePWA } from "vite-plugin-pwa";
@@ -9,17 +10,32 @@ export default defineConfig({
     VitePWA({
       registerType: "autoUpdate",
       devOptions: {
-        enabled: true, // 開発環境でもPWA有効化
+        enabled: true, // 開発でもSW有効化
       },
-      pwaAssets: {
-        disabled: false,
-        config: true,
+      manifest: {
+        name: "Your App Name",
+        short_name: "YourApp",
+        description: "アプリ説明",
+        theme_color: "#ffffff",
+        display: "standalone",
+        start_url: "/ReactApp/",
+        scope: "/ReactApp/",
+        icons: [
+          { src: "pwa-192x192.png", sizes: "192x192", type: "image/png" },
+          { src: "pwa-512x512.png", sizes: "512x512", type: "image/png" },
+          {
+            src: "maskable-icon-512x512.png",
+            sizes: "512x512",
+            type: "image/png",
+            purpose: "maskable",
+          },
+        ],
       },
     }),
     tailwindcss(),
   ],
   server: {
-    port: 5273, // ポート番号5273で受け付ける場合
+    port: 5273,
   },
   base: "/ReactApp/",
 });
