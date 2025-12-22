@@ -46,7 +46,6 @@ export default defineConfig({
               },
             },
           },
-          // 例：画像やJMAなど他のエンドポイントも必要ならここに追加
         ],
       },
     }),
