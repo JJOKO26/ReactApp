@@ -15,6 +15,17 @@ export default defineConfig({
         disabled: false,
         config: true,
       },
+
+      manifest: {
+        name: "My Awesome App",
+        short_name: "AwesomeApp",
+        description: "React + Vite PWA Example",
+        start_url: "/ReactApp/",
+        scope: "/ReactApp/",
+        display: "standalone",
+        theme_color: "#ffffff",
+        background_color: "#ffffff",
+      },
     }),
     tailwindcss(),
   ],
