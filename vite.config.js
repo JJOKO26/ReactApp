@@ -17,8 +17,8 @@ export default defineConfig({
       },
 
       manifest: {
-        name: "My Awesome App",
-        short_name: "AwesomeApp",
+        name: "レシピブックアプリ",
+        short_name: "レシピブック",
         description: "React + Vite PWA Example",
         start_url: "/ReactApp/",
         scope: "/ReactApp/",
