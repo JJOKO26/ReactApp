@@ -43,7 +43,7 @@ export default defineConfig({
           /^https:\/\/api\.open-meteo\.com\//,
         ],
 
-        globPatterns: ["**/*.{css,html,ico,js,jpg,jsx,png,webmanifest}"],
+        globPatterns: ["**/*.{css,html,ico,js,jpg,png,webmanifest}"],
 
         // ★ 実行時キャッシュ
         runtimeCaching: [
