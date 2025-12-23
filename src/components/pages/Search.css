@@ -25,6 +25,7 @@
   border-radius: 5px;
   top: -30px;
   position: relative;
+  z-index: 1;
 }
 
 .search-button {
@@ -37,4 +38,5 @@
   cursor: pointer;
   top: -30px;
   position: relative;
+  z-index: 1;
 }
