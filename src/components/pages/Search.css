@@ -6,11 +6,10 @@
 
 .search-container h1 {
   position: relative;
-  top: -30px;
+  top: -40px;
 
-  font-size: clamp(18px, 6vw, 28px);
+  font-size: clamp(18px, 6vw, 35px);
   line-height: 1.2;
-  width: min(90vw, 600px);
 }
 
 .search-row {
