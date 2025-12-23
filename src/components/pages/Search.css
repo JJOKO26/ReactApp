@@ -2,30 +2,38 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  /* コンテナの余白は margin/padding で調整 */
+  padding-top: 8px;
 }
 
 .search-container h1 {
-  position: relative;
-  top: -30px;
-  font-size: 40px;
-  pointer-events: none;
+  /* 位置調整は top ではなく margin で */
+  margin-top: -50px; /* 見た目を少し上げたい場合 */
+  margin-bottom: 12px; /* 入力欄との間隔 */
+  font-size: 40px; /* モバイル寄りに少し小さめ（必要に応じて） */
+  line-height: 1.2; /* 行高を明示 */
+  /* もし重なりが疑わしいならタップを通す */
+  /* pointer-events: none; */
 }
 
 .search-row {
   display: flex;
   align-items: center;
+  gap: 0px; /* 入力欄とボタンの間隔 */
 }
 
 .search-container input[type="text"] {
   width: 250px;
-  height: 20px;
-  font-size: 16px;
-  padding: 5px 10px;
+  height: 34px; /* 実体の高さをテキストに合わせて確保 */
+  font-size: 16px; /* iOSのオートズーム対策で16px以上推奨 */
+  padding: 6px 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
-  top: -30px;
-  position: relative;
-  z-index: 1;
+  /* レイアウトは margin で調整 */
+  margin-top: 0;
+  position: relative; /* 特に不要なら position は外して可 */
+  z-index: 1; /* 最終手段：重なり回避 */
+  box-sizing: border-box;
 }
 
 .search-button {
@@ -36,7 +44,8 @@
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  top: -30px;
-  position: relative;
-  z-index: 1;
+  /* こちらも top は使わない */
+  margin-top: 0;
+  position: relative; /* 特に不要なら外せます */
+  box-sizing: border-box;
 }
