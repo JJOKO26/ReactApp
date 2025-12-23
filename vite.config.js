@@ -18,6 +18,23 @@ export default defineConfig({
         display: "standalone",
         theme_color: "#ffffff",
         background_color: "#ffffff",
+        icons: [
+          {
+            src: "/ReactApp/pwa-192x192.png",
+            sizes: "192x192",
+            type: "image/png",
+          },
+          {
+            src: "/ReactApp/pwa-512x512.png",
+            sizes: "512x512",
+            type: "image/png",
+          },
+          {
+            src: "/ReactApp/pwa-180x180.png",
+            sizes: "180x180",
+            type: "image/png",
+          },
+        ],
       },
       workbox: {
         // ★ API を SPA フォールバック対象から除外
