@@ -18,7 +18,7 @@
 }
 
 .search-container input[type="text"] {
-  width: 300px;
+  width: 280px;
   height: 20px;
   font-size: 16px;
   padding: 5px 10px;
@@ -29,7 +29,7 @@
 }
 
 .search-button {
-  width: 75px;
+  width: 70px;
   height: 34px;
   font-size: 15px;
   color: black;
