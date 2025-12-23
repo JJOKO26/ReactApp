@@ -5,6 +5,7 @@
 .category-container h1 {
   position: relative;
   top: -118px;
+  font-size: 40px;
 }
 
 .category-grid {

@@ -8,4 +8,5 @@
 .list-container h1 {
   margin-bottom: 20px; /* タイトル下の余白 */
   text-align: center;
+  font-size: 40px;
 }
