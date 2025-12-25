@@ -69,7 +69,7 @@ export default defineConfig({
             handler: "CacheFirst",
             options: {
               cacheName: "images",
-              cacheableResponse: { statuses: [200] },
+              cacheableResponse: { statuses: [0, 200] },
               expiration: {
                 maxEntries: 300,
                 maxAgeSeconds: 60 * 60 * 24 * 30, // 30日
