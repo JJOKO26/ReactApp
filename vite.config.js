@@ -43,7 +43,7 @@ export default defineConfig({
           /^https:\/\/api\.open-meteo\.com\//,
         ],
 
-        globPatterns: ["**/*.{css,html,ico,js,png,webmanifest}"],
+        globPatterns: ["**/*.{css,html,ico,js,jpg,png,webmanifest}"],
         maximumFileSizeToCacheInBytes: 200 * 1024 * 1024,
 
         // ★ 実行時キャッシュ
