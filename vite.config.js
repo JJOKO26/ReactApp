@@ -63,6 +63,20 @@ export default defineConfig({
               },
             },
           },
+          {
+            // 画像はキャッシュ優先（初回取得後は高速に）
+            urlPattern: ({ request }) => request.destination === "image",
+            handler: "CacheFirst",
+            options: {
+              cacheName: "images",
+              cacheableResponse: { statuses: [200] },
+              expiration: {
+                maxEntries: 300,
+                maxAgeSeconds: 60 * 60 * 24 * 30, // 30日
+                purgeOnQuotaError: true,
+              },
+            },
+          },
         ],
       },
     }),
