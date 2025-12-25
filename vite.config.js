@@ -44,6 +44,7 @@ export default defineConfig({
         ],
 
         globPatterns: ["**/*.{css,html,ico,js,png,webmanifest}"],
+        maximumFileSizeToCacheInBytes: 200 * 1024 * 1024,
 
         // ★ 実行時キャッシュ
         runtimeCaching: [
